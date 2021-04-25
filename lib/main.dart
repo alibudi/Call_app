@@ -166,7 +166,7 @@ class _HomePageState extends State<HomePage> {
 
   void equlPassed() {
     String finalQuestion = userQuestion;
-    finalQuestion = finalQuestion.replaceAll('x', '+');
+    finalQuestion = finalQuestion.replaceAll('x', '*');
     Parser p = Parser();
     Expression exp = p.parse(finalQuestion);
     ContextModel cm = ContextModel();
